@@ -2,8 +2,6 @@ import dotenv from 'dotenv'
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 
-console.log(`.env${process.env.NODE_ENV == 'development' ? '.development.local' : ''}`)
-
 dotenv.config({ path: `.env${process.env.NODE_ENV == 'development' ? '.development.local' : ''}` })
 
 import { Client, IntentsBitField } from 'discord.js';
