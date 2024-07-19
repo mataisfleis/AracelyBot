@@ -1,0 +1,21 @@
+{
+  "name": "aracely-bot",
+  "main": "dist/index.js",
+  "module": "index.ts",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "scripts": {
+	"dev": "bun run src/index.ts",
+    "start": "node --env-file=.env dist/index.js",
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "commandkit": "^0.1.10",
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5"
+  }
+}
